@@ -1,56 +1,59 @@
 {
-    "version": "0.2.12",
-    "license": "MIT",
-    "main": "dist/index.js",
-    "typings": "dist/index.d.ts",
-    "files": [
-        "dist",
-        "src"
-    ],
-    "engines": {
-        "node": ">=10"
-    },
-    "scripts": {
-        "start": "tsdx watch",
-        "build": "tsdx build",
-        "test": "tsdx test --passWithNoTests",
-        "lint": "tsdx lint",
-        "prepare": "tsdx build",
-        "size": "size-limit",
-        "analyze": "size-limit --why"
-    },
-    "peerDependencies": {
-        "react": ">=16"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "tsdx lint"
-        }
-    },
-    "prettier": {
-        "printWidth": 80,
-        "semi": true,
-        "singleQuote": true,
-        "trailingComma": "es5"
-    },
-    "name": "@sarge/avatar-view",
-    "author": "Sercan (Sarge) Altundas",
-    "module": "dist/avatar-view.esm.js",
-    "devDependencies": {
-        "@size-limit/preset-small-lib": "^4.5.5",
-        "@types/react": "^17.0.15",
-        "@types/react-dom": "^17.0.9",
-        "husky": "^7.0.1",
-        "react": "^17.0.2",
-        "react-dom": "^17.0.2",
-        "tsdx": "^0.14.1",
-        "tslib": "^2.3.0",
-        "typescript": "^3.9.10"
-    },
-    "dependencies": {
-        "@react-three/drei": "^7.2.2",
-        "@react-three/fiber": "7.0.5",
-        "@types/three": "^0.130.1",
-        "three": "^0.130.1"
+  "version": "0.2.12",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "eject": "expo eject",
+    "start_web": "tsdx watch",
+    "build_web": "tsdx build",
+    "test_web": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why"
+  },
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
     }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "@pleasedwork/avatar-view",
+  "author": "Ahmet Kaplan",
+  "module": "dist/avatar-view.esm.js",
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@types/babel__core": "^7.1.17",
+    "expo-cli": "^4.12.10"
+  },
+  "dependencies": {
+    "@react-three/fiber": "^8.0.0-beta-04",
+    "@types/react": "^17.0.38",
+    "@types/three": "^0.135.0",
+    "babel-preset-expo": "^8.3.0",
+    "react": "^17.0.0",
+    "react-native": "^0.66.4",
+    "react-use-measure": "^2.1.1",
+    "three": "^0.136.0"
+  }
 }

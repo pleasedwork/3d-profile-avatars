@@ -1,9 +1,9 @@
-import React, { useEffect } from 'react';
+import React, { useEffect} from 'react';
 import { Object3D, Vector3 } from 'three';
-import { useGLTF } from '@react-three/drei';
+import { useGLTF } from '../drei/native';
 import useEyeBlink from '../utils/useEyeBlink';
 import useHeadMovement from '../utils/useHeadMovement';
-import { dispose, useGraph } from '@react-three/fiber';
+import { dispose, useGraph } from '@react-three/fiber/native';
 import { correctMaterials, hideHands, isSkinnedMesh } from '../utils/utils';
 
 interface AvatarProps {

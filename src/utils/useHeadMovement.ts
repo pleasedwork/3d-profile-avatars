@@ -1,7 +1,7 @@
 import { Vector2 } from 'three';
 import { useEffect } from 'react';
 import { lerp, mapRange, Nodes } from './utils';
-import { useFrame, useThree } from '@react-three/fiber';
+import { useFrame, useThree } from '@react-three/fiber/native';
 
 const rad = Math.PI / 180;
 const eyeRotationOffsetX = 90 * rad;
